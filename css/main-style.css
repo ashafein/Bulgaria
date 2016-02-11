@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Light:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+
+
+body {
+    font-family: Roboto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+
+
+header {
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.bulgaria-logo, .header-nav, .header-contacts {
+    margin-bottom: 15px;
+}
+
+.header-contacts {
+    font-size:14px;
+}
+
+.header-contacts i {
+    margin-right:10px;
+    color: #14486b;
+}
+
+.header-contacts .header-mail{
+    text-transform: uppercase;
+}
+
+.header-contacts .header-callback {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header-nav {
+    color: #14486b;
+    font-size:14px;
+    text-transform: uppercase;
+    padding-top: 17px;
+}
+
+
+.header-nav li{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    line-height: 17px;
+    vertical-align: bottom;
+}
