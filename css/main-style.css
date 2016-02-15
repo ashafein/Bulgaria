@@ -257,7 +257,7 @@ padding: 15px 20px 15px 20px;
     margin-top: 7px;
 }
 
-.slider-content-bottom {
+.search-form {
     text-align: center;
 }
 
@@ -290,7 +290,7 @@ padding: 15px 20px 15px 20px;
     color: #14486b;
 }
 
-.orange-form .btn.dropdown-toggle.btn-default, .slider-content-bottom .btn.orange-button {
+.orange-form .btn.dropdown-toggle.btn-default, .search-form .btn.orange-button {
 
     border-radius: 2px;
 }
@@ -427,7 +427,7 @@ h2.home-page-h2 {
 }
 /* END Realty-item */
 
-.home-realty-content-pagination{
+.content-pagination{
     padding:45px 15px;
 }
 
@@ -1159,3 +1159,212 @@ h3.product-header{
     margin-top: 20px;
 }
 /* END banner */
+
+.head-slider{
+    position:relative;
+    width: 100%;
+
+}
+
+.head-slider img{
+    width: 100%;
+    background-size: cover;
+    max-height: 240px;
+}
+
+.head-slider .button-transparent{
+    position: absolute;
+    padding: 20px 50px;
+    border-radius: 0;
+    border-width: 3px ;
+    top:40%;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+/* Article item */
+.article-item{
+    padding: 15px 13px 17px 13px;
+    border: 1px #aeaeae solid;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.article-item div{
+    display: inline-block;
+}
+
+.article-item .article-content{
+    vertical-align: top;
+    max-width: 55%;
+    margin-left: 13px;
+}
+
+.article-item h4{
+    color: #000;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-item .article-head-part{
+    color: #b8b8b8;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.article-item .article-descr{
+    font-size: 14px;
+    color: #000;
+    height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.article-item .article-image {
+    padding: 3px;
+    border: 1px #000 solid;
+    background-color: #e6e6e6;
+}
+
+.article-item .article-button-blue{
+    background-color: #fff;
+    border: 1px #000 solid;
+    color: #000;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top:45px;
+}
+
+.article-item .article-button-blue:hover{
+    background-color: #14486b;
+    border: 1px #14486b solid;
+    color: #fff;
+}
+
+.article-page .content-pagination{
+    margin-top: 0;
+}
+
+.article-page .page-aside-right{
+    padding-left: 30px;
+}
+/*END  Article item */
+.article-page .aside-free-specialist-content{
+    min-width:260px;
+    padding: 10px 20px 30px 20px;
+}
+
+.little-subscribe-form{
+    padding: 20px 20px 10px 20px;
+    border: 3px #d9d9d9 solid;
+    margin-bottom: 17px;
+    margin-top: 20px;
+
+}
+
+.little-subscribe-form .form-group{
+    width: 100%;
+}
+
+.little-subscribe-form label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 20%;
+}
+
+.little-subscribe-form input{
+    max-width: 100%;
+    display: inline-block;
+    min-width: 216px;
+    border-radius: 0;
+    background-color: #e6e6e6;
+    border: 0;
+    width: 80%;
+}
+
+.little-subscribe-form .blue-button{
+    background-color: #14486b;
+    color: #fff;
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    border: 3px #e6e6e6 solid;
+    margin-top: 20px;
+}
+
+@media  (max-width: 1200px) {
+    .span4 {
+        width:100%;
+        display: block;
+    }
+
+    .span8 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .span8 .article-item{
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .little-subscribe-form .form-inline .form-control{
+        width:100%;
+        display: block;
+    }
+
+    .span8 .article-item{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 716px) and (max-width: 1100px)  {
+    .little-subscribe-form .form-inline .form-control{
+        width:100%;
+        display: block;
+    }
+    .span8 .article-item{
+        width: 100%;
+        text-align: left;
+    }
+
+}
+
+
+.span4 .search-form{
+    min-width: 260px;
+    margin-top: 15px;
+}
+
+.span4 .search-form .orange-form{
+    padding: 20px;
+    width: 100%;
+}
+
+.span4 .search-form .form-group{
+    width:100%;
+}
+.span4 .search-form .orange-form .form-group .bootstrap-select.btn-group,
+.span4 .search-form form .btn.orange-button,
+.span4 .search-form .orange-form input{
+    display: inline-block;
+    margin-bottom: 10px;
+    width:100%;
+}
