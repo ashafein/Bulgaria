@@ -3,7 +3,7 @@
  */
 
 $('.realty-head').popover({
-    trigger: 'click',
+    trigger: 'hover',
     animation: 'show',
     placement: 'top',
     html: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>'

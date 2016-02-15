@@ -325,7 +325,7 @@ h2.home-page-h2 {
 
 .home-realty-content{
     text-align: left;
-    padding:25px 30px;
+    padding:25px 15px;
     max-width: 1240px;
     margin: 0 auto;
 }
@@ -339,7 +339,7 @@ h2.home-page-h2 {
      background-color: #efefef;
      font-weight: 300;
      display: inline-block;
-     margin: 5px;
+     margin: 10px;
     text-align: left;
 }
 
@@ -1169,7 +1169,7 @@ h3.product-header{
 .head-slider img{
     width: 100%;
     background-size: cover;
-    max-height: 240px;
+    height: 240px;
 }
 
 .head-slider .button-transparent{
@@ -1367,4 +1367,36 @@ h3.product-header{
     display: inline-block;
     margin-bottom: 10px;
     width:100%;
+}
+
+.catalog-page .search-form{
+    margin-top: 18px;
+}
+
+@media  (max-width: 880px) {
+    .catalog-page .orange-form{
+        padding-right: 20px;
+    }
+    .catalog-page .form-inline .form-group,
+    .catalog-page .orange-form.form-inline,
+    .catalog-page .orange-form .form-group .bootstrap-select.btn-group{
+        width:100%;
+    }
+
+    .catalog-page .search-form .btn.orange-button,
+    .catalog-page .search-form .orange-form .form-group input{
+        display: block;
+        width: 100%;
+    }
+
+    .catalog-page .catalog-content{
+        text-align: center;
+    }
+
+}
+
+@media  (max-width: 850px) {
+    .home-realty-content{
+        text-align: center;
+    }
 }
