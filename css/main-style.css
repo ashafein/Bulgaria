@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,500,400italic,500italic,600,600italic,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+
 html,body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +11,7 @@ html,body {
     margin: 0;
     display: flex;
     flex-direction: column;
+
 }
 
 .page-wrapper{
@@ -53,8 +56,12 @@ h1, h2 {
 
 .container-fluid{
     max-width: 1270px;
+}
 
-
+.deals-page .free-service .free-service-wrap{
+    max-width: 1270px ;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* END spacers */
@@ -1124,13 +1131,20 @@ h3.product-header{
 }
 
 /* banner */
-.specoffer{
+
+.bottom-banner .container-fluid{
     background-image: url('../img/specoffer.png');
+    background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 267px;
+}
+
+.specoffer{
+    background-size: cover;
     padding-top: 60px;
     padding-bottom: 45px;
-    margin-bottom: 50px;
 }
 
 .specoffer h4{
@@ -1399,4 +1413,99 @@ h3.product-header{
     .home-realty-content{
         text-align: center;
     }
+}
+
+.deals-page .free-service{
+    background-image: none ;
+    padding-top: 40px;
+}
+
+.deals-page .free-service-wrap{
+    background-color: #d3d3d3;
+}
+
+.deals-page .free-service .free-service-wrap {
+    border: 1px #000 solid;
+}
+
+.deals-page .free-service hr{
+    border-color: #000;
+}
+
+.deals-page .free-service input,
+.deals-page .free-service textarea {
+    border:1px #000 solid;
+}
+
+.deals-page .free-service .checkbox a,
+.deals-page .free-service .checkbox a:hover{
+    color: #000;
+}
+
+.deals-page .free-service .free-service-right input{
+    border:0;
+    background-color: #e7e7e7;
+}
+
+.deals-page .free-service .free-service-button .button-transparent{
+    border: 1px #000 solid;
+    color: #000;
+}
+
+.sails-offers{
+    padding-bottom: 30px;
+}
+
+.sails-offers h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ff2b2b;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.sail-offer-item{
+    padding: 5px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+
+.sail-offer-item div{
+    padding-top: 215px;
+
+    height: 265px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sail-offer-item a,
+.sail-offer-item a :hover{
+    vertical-align: bottom;
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    background-color: #14486b;
+    font-size: 18px;
+    font-family:'Roboto', sans-serif ;
+    padding: 10px 10px 15px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.sail-offer-item a:hover{
+    font-weight: 600;
+}
+
+.sail-offer-item .ukrain-flag{
+    background-image: url("../img/ukraine.png");
+}
+
+.sail-offer-item .kazahstan-flag{
+    background-image: url("../img/kazakhstan.png");
+}
+
+.sail-offer-item .russian-flag{
+    background-image: url("../img/russia.png");
 }
