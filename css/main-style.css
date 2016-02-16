@@ -89,7 +89,7 @@ h1, h2 {
     display: inline-block;
 }
 
-.orange-button-wrapper{
+.product-page .orange-button-wrapper{
     background: transparent; /* For browsers that do not support gradients */
     background: -webkit-radial-gradient(#c3d1d9, transparent, transparent ); /* Safari 5.1 to 6.0 */
     background: -o-radial-gradient(#c3d1d9, transparent, transparent ); /* For Opera 11.6 to 12.0 */
@@ -1268,11 +1268,11 @@ h3.product-header{
     margin-top: 0;
 }
 
-.article-page .page-aside-right{
+.sidebar-page .page-aside-right{
     padding-left: 30px;
 }
 /*END  Article item */
-.article-page .aside-free-specialist-content{
+.sidebar-page .aside-free-specialist-content{
     min-width:260px;
     padding: 10px 20px 30px 20px;
 }
@@ -1418,6 +1418,7 @@ h3.product-header{
 .deals-page .free-service{
     background-image: none ;
     padding-top: 40px;
+    margin-bottom: 20px;
 }
 
 .deals-page .free-service-wrap{
@@ -1508,4 +1509,36 @@ h3.product-header{
 
 .sail-offer-item .russian-flag{
     background-image: url("../img/russia.png");
+}
+
+.bottom-banner + .free-service{
+    margin-top:0;
+    padding-top: 0;
+}
+
+.deals-detail h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.deals-detail h3 span{
+    width:99px;
+    height:63px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.deals-detail h3 .ukrainian-wave{
+    background-image: url('../img/ukraine_wave.png');
+}
+
+.deals-detail .span8 p{
+    margin-bottom: 30px;
+}
+
+.deals-detail .button-single-orange{
+    border-width: 2px;
+    border-radius: 0;
+    padding: 7px 80px;
 }
