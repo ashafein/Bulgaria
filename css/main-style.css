@@ -18,12 +18,6 @@ html,body {
     flex: 1;
 }
 
-@media (min-width: 1200px){
-    .span8 {
-        width: 870px;
-    }
-}
-
 @media (min-width: 1200px) {
     [class*="span"] {
         margin-left: 0px;
@@ -68,6 +62,10 @@ h1, h2 {
 
 .container-fluid{
     max-width: 1270px;
+}
+
+.sidebar-left .span8{
+    margin-left:0 ;
 }
 
 .deals-page .free-service .free-service-wrap{
@@ -1661,25 +1659,25 @@ p.aside-specialist-top-text{
 
 .region-item.region-to-the-left .region-item-image{
     float:left;
+    position: relative;
 }
 
 .region-item.region-to-the-left .region-item-content{
     float:right;
-    position: relative;
 }
 
 
 .region-item.region-to-the-right .region-item-image{
     float:right;
+    position: relative;
 }
 
 .region-item.region-to-the-right .region-item-content{
     float:left;
-    position: relative;
 }
 
 
-.region-item .region-item-content:after{
+.region-item .region-item-image:after{
     width: 0;
     height: 0;
     border-style: solid;
@@ -1689,15 +1687,45 @@ p.aside-specialist-top-text{
     content: " ";
 }
 
-.region-item.region-to-the-left .region-item-content:after{
-    left: -14px;
+.region-item.region-to-the-left .region-item-image:after{
+    right: 0px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #fff transparent transparent;
+
+
 }
 
-.region-item.region-to-the-right .region-item-content:after {
-    right: -14px;
+.region-item.region-to-the-right .region-item-image:after {
+    left: 0px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #ffffff;
 }
+
 /* END region item */
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .row-fluid .span8,
+    .row-fluid .span4 {
+        width: 100%;
+    }
+    .row-fluid [class*="span"]{
+        margin-left: 0;
+    }
+    .sidebar-page .page-aside-right{
+        padding-left: 0;
+    }
+    .sidebar-page .page-aside-left{
+        padding-right: 0;
+    }
+
+    .region-item{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .sidebar-page .page-aside-right {
+        padding-left: 0px;
+        -padding-right: 15px;
+    }
+}
