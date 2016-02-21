@@ -18,6 +18,10 @@ html,body {
     flex: 1;
 }
 
+.text-underline{
+    text-decoration: underline;
+}
+
 @media (min-width: 1200px) {
     [class*="span"] {
         margin-left: 0px;
@@ -38,6 +42,11 @@ h1, h2 {
 .spacer-45 {
     width:100%;
     height:45px;
+}
+
+.spacer-40 {
+    width:100%;
+    height:40px;
 }
 
 .spacer-70 {
@@ -1183,15 +1192,14 @@ h3.product-header{
 /* banner */
 
 .bottom-banner .container-fluid{
-    background-image: url('../img/specoffer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 30px;
     margin-bottom: 30px;
     min-height: 267px;
 }
 
 .specoffer{
+    background-image: url('../img/specoffer.png');
+    background-repeat: no-repeat;
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 45px;
@@ -1836,3 +1844,221 @@ p.aside-specialist-top-text{
         margin-bottom: 12px;
     }
 }
+
+
+/* About us */
+
+.about-us-top li{
+    margin-bottom: 20px;
+}
+
+.about-us-top img{
+    padding: 2px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-width: 360px;
+    width:100%;
+}
+
+.about-us-top .about-us-top-content{
+    padding-left: 15px;
+}
+
+.about-us-top h4{
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.about-us-top ul{
+    font-size: 15px;
+}
+
+.contact-icon{
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-size:contain ;
+    margin-right: 15px;
+}
+
+.contact-icon.kievstar {
+    background-image: url('../img/phone_kievstar.png');
+}
+
+.contact-icon.mts{
+    background-image: url('../img/phone_mts.png');
+}
+
+.contact-icon.email{
+    background-image: url('../img/icon-email.png');
+}
+
+.contact-icon.skype{
+    background-image: url('../img/icon-skype.png');
+}
+.contact-icon.working-time{
+    background-image: url('../img/shop_reg.png');
+}
+
+.page-aside-right h4{
+    margin-top: 0;
+}
+
+.about-us-contact-form{
+    padding: 15px 10px 10px 20px;
+    border-radius: 5px;
+    border: 1px #000 solid;
+}
+
+.about-us-contact-form h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.about-us-contact-form p{
+    font-size: 18px;
+}
+
+.about-us-contact-form .control-label{
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.about-us-contact-form p{
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.about-us-contact-form .form-control{
+    background-color: #e7e7e7;
+}
+
+.about-us-contact-form .capcha{
+    margin-top: 40px;
+}
+
+.about-us-contact-form .blue-button{
+    background-color: #14486b;
+    color: #fff;
+}
+
+.blue-button:hover{
+  background-color: #052c46;
+}
+
+.about-us-content h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.service-item span{
+    background-image: url('../img/number-back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin: 0 15px 5px 0;
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    width: 43px;
+    height: 54px;
+    padding: 14px 0 0 14px;
+}
+
+.service-item {
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+
+.about-us-bottom-item{
+    background-color: #f7f7f7;
+    background-image: repeating-linear-gradient(45deg, transparent, rgba(253,253,253,1) 15px, transparent, rgba(258,258,258,1) 15px, rgba(250,250,250,.5) 30px);
+    border: 2px #14486b solid;
+    border-radius: 20px;
+    width: 360px;
+    height: 125px;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+.about-us-bottom-item p,
+.about-us-bottom-item img{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.about-us-bottom-item div{
+    display: inline-block;
+    max-width: 250px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-us-bottom-item img{
+    width:42px;
+    height: 42px;
+    background-size: contain;
+    margin-right: 40px;
+}
+
+.about-us-bottom-item.margin-block {
+    margin-left: 75px ;
+    margin-right: 75px;
+}
+
+@media(max-width: 920px) {
+    .about-us-bottom-item.margin-block {
+        margin-left: 0px ;
+        margin-right: 0px;
+    }
+    .about-us-bottom {
+        text-align: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    .service-item span{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 740px) {
+    .about-us-bottom-item{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1285px) {
+    .about-us-bottom{
+        text-align: center;
+    }
+}
+
+.about-us-bottom .orange-button.button-single-orange{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-left:60px ;
+    padding-right: 60px;
+    white-space: pre-line;
+}
+
+.about-us-bottom .orange-button.button-single-orange i{
+    margin-right: 60px;
+}
+.about-us-bottom .orange-button.button-single-orange span{
+    vertical-align: super;
+    display: inline-block;
+}
+/*END  About us */
